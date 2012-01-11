@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://cosmoslx.github.com
+title: Cosmos of Cosmoslx
+subtitle: building my own world:open,share,reliable
+author: Cosmoslx
 simple_search: http://google.com/search
 description:
 
