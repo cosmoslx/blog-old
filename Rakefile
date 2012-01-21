@@ -252,7 +252,11 @@ multitask :push do
     system "git add -u"
     puts "\n## Commiting: Site updated at #{Time.now.utc}"
     message = "Site updated at #{Time.now.utc}"
-    system "git commit -m \"#{message}\""
+    if (not system "git commit")
+		puts "deploy give up!"
+		exit 1
+	end
+    #system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
     system "git push origin #{deploy_branch} --force"
     puts "\n## Github Pages deploy complete"
